@@ -1,11 +1,12 @@
 
 import React, { Component } from 'react';
+import { Button, Colors } from 'react-foundation';
 
 
 export default class Home extends Component {
   render() {
     return (
-      <h1>{JSON.stringify(this.props)}</h1>
+      <Button color={Colors.SUCCESS}>{JSON.stringify(this.props)}</Button>
     );
   }
 }
